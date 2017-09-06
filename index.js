@@ -4,10 +4,19 @@ function happyHolidays (){
 }
 
 function happyHolidaysTo (name){
+    if (name === undefined)
+        name = "you"
+        
     return `Happy holidays, ${name}!`
 }
 
 function happyHolidaysTo (holiday, name){
+    if (holiday === undefined)
+        holiday = "holiday"
+
+    if (name === undefined)
+            name = "you"
+    
     return `Happy ${holiday}, ${name}!`
 }
 
